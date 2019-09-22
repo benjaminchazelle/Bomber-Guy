@@ -1,0 +1,4 @@
+[submodule "glitch"]
+	path = glitch
+	url = https://api.glitch.com/git/bomberguy
+	branch = update
