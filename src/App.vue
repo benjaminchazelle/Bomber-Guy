@@ -17,15 +17,16 @@
         },
         data: function () {
             return {
-                appState: 'splash-screen'
+                // appState: SplashScreen.name
+                appState: GameBoard.name
             }
         },
         methods: {
             displayMenu: function () {
-                this.appState = "game-menu"
+                this.appState = GameMenu.name
             },
             displayBoard: function () {
-                this.appState = "game-board"
+                this.appState = GameBoard.name
             },
         },
         provide: function () {
@@ -34,6 +35,15 @@
                 displayBoard: this.displayBoard,
             }
         },
+
+        created: function () {
+
+            window.addEventListener('keypress', function() {
+
+
+
+            });
+        }
     }
 </script>
 

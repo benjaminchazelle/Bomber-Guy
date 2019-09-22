@@ -8,15 +8,13 @@
 
 <script>
     export default {
-        name: 'Menu',
-        props: {
-            msg: String
-        },
-        inject: ['displayBoard']
+        name: 'game-menu',
+        props: {},
+        inject: ['displayBoard'],
+
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     h3 {
         margin: 40px 0 0;

@@ -6,13 +6,12 @@
 
 <script>
     export default {
-        name: 'SplashScreen',
+        name: 'splash-screen',
         mounted: function () {
-
+            var vm = this;
             setTimeout(function () {
-                    this.displayMenu() }.bind(this),
-                0);
-
+                vm.displayMenu()
+            }, 0);
         },
         inject: ['displayMenu']
     }
