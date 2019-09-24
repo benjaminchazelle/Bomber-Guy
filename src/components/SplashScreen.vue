@@ -1,6 +1,7 @@
 <template>
-    <div class="hello">
-        <h1>Splash</h1>
+    <div>
+        <h1>Bomber Guy !</h1>
+        <h5>by <a target="_blank" href="https://www.chazelle.pro/en">Benjamin Chazelle</a></h5>
     </div>
 </template>
 
@@ -11,12 +12,19 @@
             var vm = this;
             setTimeout(function () {
                 vm.displayMenu()
-            }, 0);
+                document.body.requestFullscreen()
+            }, 2000);
         },
         inject: ['displayMenu']
     }
 </script>
 
 <style scoped>
+    h1 {
+        font-size: 36px;
+    }
 
+    a {
+        color: red;
+    }
 </style>

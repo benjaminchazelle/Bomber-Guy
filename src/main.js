@@ -5,7 +5,7 @@ import VueSocketIO from 'vue-socket.io'
 
 Vue.use(new VueSocketIO({
     debug: true,
-    connection: window.location.port === "8080" ? "http://localhost:9000" : "http://" + (window.location.host),
+    connection: window.location.port === "8080" ? "http://"+window.location.hostname+":9000" : "http://" + (window.location.host),
     options: {
         path: '/socket',
     }
