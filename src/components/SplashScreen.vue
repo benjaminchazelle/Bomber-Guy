@@ -11,8 +11,7 @@
         mounted: function () {
             var vm = this;
             setTimeout(function () {
-                vm.displayMenu()
-                document.body.requestFullscreen()
+                vm.displayMenu();
             }, 2000);
         },
         inject: ['displayMenu']
